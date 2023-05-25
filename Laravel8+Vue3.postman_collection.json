@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "7917b5de-4c58-4406-ba01-e7c34da535cb",
+		"name": "Laravel8+Vue3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Nhà ở xã hội a2111\",\r\n    \"description\" : \"mô tả a33 \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://laravel8.local/api/posts/update/4",
+					"protocol": "http",
+					"host": [
+						"laravel8",
+						"local"
+					],
+					"path": [
+						"api",
+						"posts",
+						"update",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://laravel8.local/api/posts/53",
+					"protocol": "http",
+					"host": [
+						"laravel8",
+						"local"
+					],
+					"path": [
+						"api",
+						"posts",
+						"53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    //\"name\": \"\",\r\n    //\"thumbnail\": \"url_ka!aaa\",\r\n    //\"description\": \"\",\r\n    //\"is_active\": 1,\r\n   // \"start_time\" : \"2023-01-01\",\r\n    //\"end_time\" : \"2023-12-30\"\r\n    \"page\" : 1,\r\n    \"limit\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://laravel8.local/api/posts",
+					"protocol": "http",
+					"host": [
+						"laravel8",
+						"local"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posts.create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Nhà ở xã hội 999\",\r\n    \"description\" : \"mô tả test1\",\r\n    \"gender\" : 1,\r\n    \"category_id\" :1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://laravel8.local/api/posts",
+					"protocol": "http",
+					"host": [
+						"laravel8",
+						"local"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://laravel8.local/api/posts/delete/1",
+					"protocol": "http",
+					"host": [
+						"laravel8",
+						"local"
+					],
+					"path": [
+						"api",
+						"posts",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category.index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://laravel8.local/api/category",
+					"protocol": "http",
+					"host": [
+						"laravel8",
+						"local"
+					],
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
